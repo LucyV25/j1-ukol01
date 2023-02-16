@@ -84,11 +84,101 @@ public class HlavniProgram {
         nakresliPrasatko();
 
         //vychozi bod psani jmena
-        zofka.turnLeft(45);
         zofka.penUp();
-        zofka.move(300);
+        zofka.turnLeft(45);
+        zofka.move(330);
         zofka.turnLeft(90);
         zofka.move(250);
+        zofka.turnLeft(90);
+        zofka.move(70);
+        zofka.penDown();
+        napisL();
+
+        zofka.penUp();
+        zofka.move(40);
+        zofka.turnLeft(90);
+        zofka.move(70);
+        zofka.penDown();
+
+        napisU();
+
+        zofka.penUp();
+        zofka.turnRight(90);
+        zofka.move(90);
+        zofka.turnRight(90);
+        zofka.move(15);
+        zofka.penDown();
+        zofka.turnRight(135);
+
+        napisC();
+
+        zofka.penUp();
+        zofka.move(60);
+        zofka.turnLeft(245);
+        zofka.move(30);
+        zofka.turnLeft(180);
+        zofka.penDown();
+
+        napisI();
+
+        zofka.penUp();
+        zofka.turnRight(90);
+        zofka.move(50);
+        zofka.turnRight(90);
+        zofka.move(70);
+        zofka.penDown();
+
+        napisE();
+    }
+
+    private void napisL() {
+        zofka.turnRight(180);
+        zofka.move(70);
+        zofka.turnRight(180);
+        zofka.move(70);
+        zofka.turnLeft(90);
+        zofka.move(40);
+    }
+
+    private void napisI() {
+        zofka.move(70);
+    }
+
+    private void napisU() {
+        zofka.turnRight(180);
+        zofka.move(45);
+        for (int i = 0; i < 36; i++) {
+            zofka.turnLeft(5);
+            zofka.move(2);
+        }
+        zofka.move(45);
+    }
+
+    private void napisC() {
+        for (int i = 0; i < 50; i++) {
+            zofka.turnLeft(5);
+            zofka.move(3);
+        }
+    }
+
+    private void napisE() {
+        zofka.turnRight(180);
+        zofka.move(70);
+
+        zofka.turnRight(90);
+        zofka.move(30);
+        zofka.turnRight(180);
+        zofka.move(30);
+        zofka.turnLeft(90);
+        zofka.move(35);
+        zofka.turnLeft(90);
+        zofka.move(30);
+        zofka.turnLeft(180);
+        zofka.move(30);
+        zofka.turnLeft(90);
+        zofka.move(35);
+        zofka.turnLeft(90);
+        zofka.move(30);
     }
 
     private void nakresliDomek() {
